@@ -1,0 +1,22 @@
+@url="https://temporal-worker-6e2u5rezaa-as.a.run.app"
+
+POST {{url}}/orders HTTP/1.1
+Content-Type: application/json
+accept: application/json
+{
+    "name": "123",
+    "email": "123",
+    "phone": "123",
+    "address": "123",
+    "products": [
+        {
+            "id": 1,
+            "quantity": 1
+        }
+    ]
+}
+
+####
+
+GET {{url}} HTTP/1.1
+accept: application/json
